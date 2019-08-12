@@ -1,0 +1,305 @@
+{
+  "keys": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+  "middleware": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+      "useSession": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "mysql": {
+    "client": {
+      "host": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+      "port": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+      "user": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+      "password": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+      "database": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
+    },
+    "app": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "agent": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "default": {
+      "database": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-mysql/config/config.default.js"
+    }
+  },
+  "onerror": {
+    "all": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "errorPageUrl": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-onerror/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "name": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "version": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "description": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "private": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "await-stream-ready": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-mysql": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "stream-wormhole": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "stop": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "dev": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "debug": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "test": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "cov": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "lint": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "ci": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "autod": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "url": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "license": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "strict": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "depth": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "env": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "level": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "logging": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "port": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
+}
