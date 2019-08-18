@@ -1,10 +1,11 @@
-const Service = require('egg').Service;
-const respPackage = require('../../util/response_package');
+const BaseService = require('./base_serviece')
 
-class HomeService extends Service {
+class HomeService extends BaseService {
     async getHomeBannerSer(params) {
         const {app} = this
+        const {ServieceError} = app.errors.httpException
         let {pageSize = 1, pageNum = 5} = params
+
         pageSize = Number.parseInt(pageSize)
         pageNum = Number.parseInt(pageNum)
         const startIndex = pageNum * (pageSize - 1)
@@ -20,9 +21,9 @@ class HomeService extends Service {
                 }
             });
 
-            return respPackage(200, res)
+            return this.respPackage(200, res)
         }catch (e) {
-            throw new Error(e)
+            throw  new ServieceError(e.message)
         }
 
         //todo 开启事务
@@ -37,21 +38,25 @@ class HomeService extends Service {
 
     async getHomeInfoSer() {
         const {app} = this
+        const {ServieceError} = app.errors.httpException
+
         try {
             const res = await app.mysql.query('select * from lwh_message')
-            return respPackage(200, res)
+            return this.respPackage(200, res)
         }catch (e) {
-            throw new Error(e)
+            throw new new ServieceError(e.message)
         }
     }
 
     async getHomeShuffleSer() {
         const {app} = this
+        const {ServieceError} = app.errors.httpException
+
         try {
             const res = await app.mysql.query('select * from lwh_shuffle')
-            return respPackage(200, res)
+            return this.respPackage(200, res)
         }catch (e) {
-            throw new Error(e)
+            throw new ServieceError(e.message)
         }
     }
 }

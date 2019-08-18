@@ -162,6 +162,7 @@
         "database": "my_fruit"
       }
     },
+    "validate": {},
     "env": "local",
     "name": "example",
     "keys": "<String len: 26>",
@@ -181,8 +182,10 @@
       "dependencies": {
         "await-stream-ready": "^1.0.1",
         "egg": "^2.15.1",
+        "egg-bizerror": "^2.2.1",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0",
+        "egg-validate": "^2.0.2",
         "stream-wormhole": "^1.1.0"
       },
       "devDependencies": {
@@ -477,6 +480,17 @@
       "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
       "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-mysql",
       "version": "3.0.0"
+    },
+    "validate": {
+      "enable": true,
+      "package": "egg-validate",
+      "name": "validate",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
+      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-validate",
+      "version": "2.0.2"
     }
   }
 }

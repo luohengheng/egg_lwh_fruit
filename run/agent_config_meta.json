@@ -159,6 +159,7 @@
     "defaultViewEngine": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/config.default.js",
     "mapping": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/config.default.js"
   },
+  "validate": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-validate/config/config.default.js",
   "env": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
   "name": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
   "proxy": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
@@ -177,8 +178,10 @@
     "dependencies": {
       "await-stream-ready": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-bizerror": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-mysql": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "stream-wormhole": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {

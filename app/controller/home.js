@@ -4,6 +4,12 @@ class HomeController extends Controller {
   async getHomeBanner() {
       const { ctx, service } = this
       const params = ctx.request.body
+
+      ctx.validate({
+          pageSize: 'homeBannerVal',
+          pageNum: 'homeBannerVal',
+      })
+
       const res = await service.home.getHomeBannerSer(params)
       ctx.body = res
   }

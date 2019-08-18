@@ -61,9 +61,9 @@ module.exports = appInfo => {
   };
 
   return {
-    ...config,
-    ...userConfig,
-    mysql,
-    onerror,
+      ...config,
+      ...userConfig,
+      mysql,
+      onerror,
   };
 };
