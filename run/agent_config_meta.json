@@ -178,10 +178,10 @@
     "dependencies": {
       "await-stream-ready": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
-      "egg-bizerror": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-mysql": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "md5": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "stream-wormhole": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {

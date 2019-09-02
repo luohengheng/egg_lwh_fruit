@@ -5,11 +5,10 @@ module.exports = app => {
     const { ParamsError } = httpException
 
     // 校验用户名是否正确
-    validator.addRule('homeBannerVal', (rule, value)=>{
-        try {
-            Number.parseInt(value)
-        }catch (e) {
-            throw new ParamsError(`${rule.type} params validator error`)
+    validator.addRule('homeBannerVal', (rule, value, arr)=>{
+
+        if (!/^\d+$/.test(value)) {
+            throw new ParamsError(`${value} params validator error`)
         }
     });
 }

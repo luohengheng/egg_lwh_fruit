@@ -3,7 +3,6 @@ module.exports = () => {
         try {
             await next();
         }catch (e) {
-            console.error('eeeee', e)
             if (e.status && e.status === '500') {
                 ctx.body = {
                     error: e.code,

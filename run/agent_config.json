@@ -182,10 +182,10 @@
       "dependencies": {
         "await-stream-ready": "^1.0.1",
         "egg": "^2.15.1",
-        "egg-bizerror": "^2.2.1",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0",
         "egg-validate": "^2.0.2",
+        "md5": "^2.2.1",
         "stream-wormhole": "^1.1.0"
       },
       "devDependencies": {
@@ -491,6 +491,17 @@
       "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
       "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-validate",
       "version": "2.0.2"
+    },
+    "md5": {
+      "enable": true,
+      "package": "md5",
+      "name": "md5",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
+      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/md5",
+      "version": "2.2.1"
     }
   }
 }

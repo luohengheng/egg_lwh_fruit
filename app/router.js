@@ -7,4 +7,5 @@ module.exports = app => {
   router.post('/getHomeInfo', controller.home.getHomeInfo);
   router.post('/getHomeShuffle', controller.home.getHomeShuffle);
   router.post('/getRecommedList', controller.recommed.getRecommedList);
+  router.post('/singleUpload', controller.upload.singleUpload);
 };
