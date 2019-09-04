@@ -2,12 +2,12 @@ const { Service } = require('egg');
 
 class BaseService extends Service{
 
-    respPackage(code, data) {
+    respPackage(code, data, msg = '') {
         switch (code) {
         case 200:
             return {
                 code: 'S10000',
-                msg: '',
+                msg,
                 data: {
                     data
                 },

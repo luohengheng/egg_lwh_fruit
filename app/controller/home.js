@@ -1,6 +1,7 @@
 const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
+
   async getHomeBanner() {
       const { ctx, service } = this
       const params = ctx.request.body

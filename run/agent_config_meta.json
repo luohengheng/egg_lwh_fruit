@@ -53,6 +53,16 @@
       "checkAddress": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/config.default.js"
     }
   },
+  "authWhiteList": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+  "authLevel": {
+    "User": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "Admin": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "SupAdmin": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
+  },
+  "secret": {
+    "secretKey": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "expiresIn": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
+  },
   "mysql": {
     "client": {
       "host": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
@@ -177,10 +187,12 @@
     },
     "dependencies": {
       "await-stream-ready": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "bcryptjs": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-mysql": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "md5": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "stream-wormhole": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
     },

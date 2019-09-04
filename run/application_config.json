@@ -211,17 +211,19 @@
       },
       "dependencies": {
         "await-stream-ready": "^1.0.1",
+        "bcryptjs": "^2.4.3",
         "egg": "^2.15.1",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0",
         "egg-validate": "^2.0.2",
+        "jsonwebtoken": "^8.5.1",
         "md5": "^2.2.1",
         "stream-wormhole": "^1.1.0"
       },
       "devDependencies": {
         "autod": "^3.0.1",
         "autod-egg": "^1.1.0",
-        "egg-bin": "^4.11.0",
+        "egg-bin": "^4.13.0",
         "egg-ci": "^1.11.0",
         "egg-mock": "^3.21.0"
       },
@@ -352,8 +354,25 @@
     },
     "onClientError": null,
     "middleware": [
-      "notfoundHandler"
+      "notfoundHandler",
+      "auth"
     ],
+    "authWhiteList": [
+      "/getHomeInfo",
+      "/getHomeShuffle",
+      "/getRecommedList",
+      "/register",
+      "/login"
+    ],
+    "authLevel": {
+      "User": 8,
+      "Admin": 15,
+      "SupAdmin": 18
+    },
+    "secret": {
+      "secretKey": "<String len: 3>",
+      "expiresIn": "12h"
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware",

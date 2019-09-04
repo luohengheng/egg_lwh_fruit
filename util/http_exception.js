@@ -16,7 +16,17 @@ class ParamsError extends Error{
     }
 }
 
+class NormalError extends Error{
+    constructor(msg='',code='E19999',status='200') {
+        super()
+        this.msg = msg
+        this.code = code
+        this.status = status
+    }
+}
+
 module.exports = {
     ServieceError,
-    ParamsError
+    ParamsError,
+    NormalError
 }

@@ -1,7 +1,7 @@
-module.exports = () => {
-    return async function notFoundHandler(ctx, next) {
+module.exports = (options, app) => {
+    return async function (ctx, next) {
         try {
-            await next();
+            await next(options);
         }catch (e) {
             if (e.status && e.status === '500') {
                 ctx.body = {
@@ -13,7 +13,7 @@ module.exports = () => {
                     },
                     status: e.status
                 }
-            }else {
+            }else if (e.status && e.status === '400') {
                 ctx.body = {
                     error: 'E19999',
                     msg: {
@@ -22,6 +22,16 @@ module.exports = () => {
                         data: e.msg
                     },
                     status: 404
+                }
+            }else {
+                ctx.body = {
+                    error: 'E19999',
+                    msg: {
+                        url: ctx.url,
+                        method: ctx.method,
+                        data: e.msg
+                    },
+                    status: 200
                 }
             }
         }

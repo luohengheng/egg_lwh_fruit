@@ -12,7 +12,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1565059317497_9990';
 
   // add your middleware config here
-  config.middleware = ['notfoundHandler'];
+  config.middleware = ['notfoundHandler', 'auth'];
 
   // 关闭csrf
   config.security = {
@@ -20,6 +20,25 @@ module.exports = appInfo => {
       enable: false,
     },
   };
+
+  // 白名单接口
+  config.authWhiteList = [
+      '/getHomeBanner', '/getHomeInfo', '/getHomeShuffle', '/getRecommedList', '/register',
+      '/login',
+  ];
+
+  // 目前定义三种用户级别
+  config.authLevel = {
+      User: 8,
+      Admin: 15,
+      SupAdmin: 18
+  }
+
+  // 设置token生成的key 和token生效时间
+  config.secret = {
+      secretKey: 'lwh',
+      expiresIn: '12h'
+  }
 
   // add your user config here
   const userConfig = {
