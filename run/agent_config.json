@@ -327,7 +327,8 @@
       "/getHomeInfo",
       "/getHomeShuffle",
       "/getRecommedList",
-      "/register"
+      "/register",
+      "/login"
     ],
     "authLevel": {
       "User": 8,

@@ -40,6 +40,9 @@ module.exports = appInfo => {
       expiresIn: '12h'
   }
 
+  // 配置本地ip方便调试
+  config.addr = ''
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

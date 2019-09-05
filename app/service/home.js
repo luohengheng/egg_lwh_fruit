@@ -17,7 +17,7 @@ class HomeService extends BaseService {
             res = res.map(i => {
                 return {
                     ...i,
-                    image_url: `http://localhost:7001/public/img/${i.image_url}`
+                    image_url: `http://${app.config.addr}:7001/public/img/${i.image_url}`
                 }
             });
 
