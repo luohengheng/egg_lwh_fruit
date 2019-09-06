@@ -53,18 +53,6 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/singleUpload",
-    "regexp": "/^\\/singleUpload(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "POST"
-    ],
-    "paramNames": [],
     "path": "/register",
     "regexp": "/^\\/register(?:\\/(?=$))?$/",
     "stack": [
@@ -79,6 +67,66 @@
     "paramNames": [],
     "path": "/login",
     "regexp": "/^\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/addFruitType",
+    "regexp": "/^\\/addFruitType(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/changeFruitType",
+    "regexp": "/^\\/changeFruitType(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/fruitTypeList",
+    "regexp": "/^\\/fruitTypeList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/putFruitInfo",
+    "regexp": "/^\\/putFruitInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/singleUpload",
+    "regexp": "/^\\/singleUpload(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

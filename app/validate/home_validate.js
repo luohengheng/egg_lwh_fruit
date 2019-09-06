@@ -1,4 +1,4 @@
-const httpException = require('../../util/http_exception')
+const httpException = require('../../error/http_exception')
 
 module.exports = app => {
     const { validator } = app;

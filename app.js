@@ -22,8 +22,11 @@ class AppBootHook {
         const valDirectory = path.join(this.app.config.baseDir, 'app/validate');
         this.app.loader.loadToApp(valDirectory, 'validate');
         // 加载所有异常类型
-        const errDirectory = path.join(this.app.config.baseDir, 'util')
+        const errDirectory = path.join(this.app.config.baseDir, 'error')
         this.app.loader.loadToApp(errDirectory, 'errors')
+        // 加载用户权限
+        const permDirectory = path.join(this.app.config.baseDir, 'util/permission')
+        this.app.loader.loadToApp(permDirectory, 'perm')
     }
 
     //todo 插件启动完毕

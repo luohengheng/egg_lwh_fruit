@@ -29,9 +29,9 @@ module.exports = appInfo => {
 
   // 目前定义三种用户级别
   config.authLevel = {
-      User: 8,
-      Admin: 15,
-      SupAdmin: 18
+      user: 8,
+      admin: 15,
+      sup: 18
   }
 
   // 设置token生成的key 和token生效时间
@@ -41,7 +41,7 @@ module.exports = appInfo => {
   }
 
   // 配置本地ip方便调试
-  config.addr = ''
+  config.addr = '192.168.9.238'
 
   // add your user config here
   const userConfig = {
@@ -66,7 +66,7 @@ module.exports = appInfo => {
     // 单数据库信息配置
     client: {
       // host
-      host: 'localhost',
+      host: '192.168.9.238',
       // 端口号
       port: '3306',
       // 用户名

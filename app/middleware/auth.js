@@ -19,9 +19,10 @@ module.exports = (options, app) => {
         }catch (e) {
             throw new NormalError('token已过期', 'E99999', '400')
         }
-        // if (decode.scope < this.level) {
-        //     throw new NormalError('权限不足')
-        // }
+        const level = app.perm.permissions.permission[`${ctx.url}`] || 15
+        if (decode.scope < level) {
+            throw new NormalError('权限不足')
+        }
 
         ctx.auth = {
             uid: decode.uid,

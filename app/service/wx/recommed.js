@@ -1,4 +1,4 @@
-const BaseService = require('./base_serviece')
+const BaseService = require('../base_serviece')
 
 class HomeService extends BaseService {
     async getRecommedListSer() {

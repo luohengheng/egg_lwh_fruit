@@ -55,14 +55,15 @@
   },
   "authWhiteList": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
   "authLevel": {
-    "User": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
-    "Admin": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
-    "SupAdmin": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
+    "user": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "admin": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "sup": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
   },
   "secret": {
     "secretKey": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
     "expiresIn": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
   },
+  "addr": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
   "mysql": {
     "client": {
       "host": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",

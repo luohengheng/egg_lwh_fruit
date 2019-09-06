@@ -155,7 +155,7 @@
       "app": true,
       "agent": false,
       "client": {
-        "host": "localhost",
+        "host": "192.168.9.238",
         "port": "3306",
         "user": "root",
         "password": "<String len: 6>",
@@ -331,14 +331,15 @@
       "/login"
     ],
     "authLevel": {
-      "User": 8,
-      "Admin": 15,
-      "SupAdmin": 18
+      "user": 8,
+      "admin": 15,
+      "sup": 18
     },
     "secret": {
       "secretKey": "<String len: 3>",
       "expiresIn": "12h"
     },
+    "addr": "192.168.9.238",
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware"

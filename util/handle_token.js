@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 
-const generateToken = (app, uid, scope, ) => {
+const generateToken = (app, uid, scope,) => {
     const {secretKey, expiresIn} = app.config.secret
 
     return jwt.sign({

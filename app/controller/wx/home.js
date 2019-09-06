@@ -11,19 +11,19 @@ class HomeController extends Controller {
           pageNum: 'homeBannerVal',
       })
 
-      const res = await service.home.getHomeBannerSer(params)
+      const res = await service.wx.home.getHomeBannerSer(params)
       ctx.body = res
   }
 
   async getHomeInfo() {
     const { ctx, service } = this;
-      const res = await service.home.getHomeInfoSer()
+      const res = await service.wx.home.getHomeInfoSer()
       ctx.body = res
   }
 
   async getHomeShuffle() {
     const { ctx, service } = this;
-      const res = await service.home.getHomeShuffleSer()
+      const res = await service.wx.home.getHomeShuffleSer()
       ctx.body = res
   }
 }

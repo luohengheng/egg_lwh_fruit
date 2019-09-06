@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs')
-const BaseService = require('./base_serviece')
-const handleToken = require('../../util/handle_token')
+const BaseService = require('../base_serviece')
+const handleToken = require('../../../util/handle_token')
 
 class RegisterService extends BaseService {
 
@@ -19,7 +19,7 @@ class RegisterService extends BaseService {
                 return this.respPackage(200, '', '账号已存在')
             }
 
-            //todo type '01' 普通注册，'02' 微信小程序
+            //todo type 'user' 普通注册，'admin' 管理员, 'sup' 超级管理员, 'wx' 微信小程序,
             await app.mysql.query(
                 `INSERT INTO lwh_register(username, password, type, create_date, open_id) VALUES(?, ?, ?, ?, ?);`,
                 [username, saltPwd, '01', new Date(), ''])
@@ -43,11 +43,12 @@ class RegisterService extends BaseService {
             }
 
             const comparePwd = bcrypt.compareSync(password, selRes[0].password)
-            if (comparePwd) {
+            if (!comparePwd) {
                 return this.respPackage(200, '', '密码错误')
             }
 
-            const token = handleToken.generateToken(app, selRes[0].id, app.config.authLevel.User)
+            const userLevel =  app.config.authLevel[selRes[0].type]
+            const token = handleToken.generateToken(app, selRes[0].id, userLevel)
             return this.respPackage(200, {token})
         }catch (e) {
             throw new ServieceError(e.message)
