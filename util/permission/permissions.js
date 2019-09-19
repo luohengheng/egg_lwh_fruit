@@ -3,6 +3,7 @@ const permission = {
     '/getHomeInfo': 8,
     '/getHomeShuffle': 8,
     '/getRecommedList': 8,
+    '/getFruitDetail': 8,
     '/getHomeBanner': 8,
     '/register': 8,
     '/login': 8,

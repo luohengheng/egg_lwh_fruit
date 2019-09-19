@@ -363,7 +363,8 @@
       "/getHomeShuffle",
       "/getRecommedList",
       "/register",
-      "/login"
+      "/login",
+      "/getFruitDetail"
     ],
     "authLevel": {
       "user": 8,

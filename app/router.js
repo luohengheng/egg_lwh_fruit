@@ -9,6 +9,7 @@ module.exports = app => {
   router.post('/getHomeInfo', controller.wx.home.getHomeInfo);
   router.post('/getHomeShuffle', controller.wx.home.getHomeShuffle);
   router.post('/getRecommedList', controller.wx.recommed.getRecommedList);
+  router.post('/getFruitDetail', controller.wx.recommed.getFruitDetail);
   router.post('/register', controller.wx.register.registerCon);
   router.post('/login', controller.wx.register.loginCon);
 

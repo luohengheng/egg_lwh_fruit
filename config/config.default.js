@@ -24,7 +24,7 @@ module.exports = appInfo => {
   // 白名单接口
   config.authWhiteList = [
       '/getHomeBanner', '/getHomeInfo', '/getHomeShuffle', '/getRecommedList', '/register',
-      '/login',
+      '/login', '/getFruitDetail'
   ];
 
   // 目前定义三种用户级别
