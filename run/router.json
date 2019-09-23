@@ -65,20 +65,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/register",
-    "regexp": "/^\\/register(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "POST"
-    ],
-    "paramNames": [],
-    "path": "/login",
-    "regexp": "/^\\/login(?:\\/(?=$))?$/",
+    "path": "/wxlogin",
+    "regexp": "/^\\/wxlogin(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -127,6 +115,30 @@
     "paramNames": [],
     "path": "/putFruitInfo",
     "regexp": "/^\\/putFruitInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/register",
+    "regexp": "/^\\/register(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/login",
+    "regexp": "/^\\/login(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

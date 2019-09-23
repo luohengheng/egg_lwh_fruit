@@ -10,14 +10,15 @@ module.exports = app => {
   router.post('/getHomeShuffle', controller.wx.home.getHomeShuffle);
   router.post('/getRecommedList', controller.wx.recommed.getRecommedList);
   router.post('/getFruitDetail', controller.wx.recommed.getFruitDetail);
-  router.post('/register', controller.wx.register.registerCon);
-  router.post('/login', controller.wx.register.loginCon);
+  router.post('/wxlogin', controller.wx.login.wxLogin);
 
   //TODO 业务支撑
   router.post('/addFruitType', controller.support.fruitType.addFruitType);
   router.post('/changeFruitType', controller.support.fruitType.changeFruitType);
   router.post('/fruitTypeList', controller.support.fruitType.fruitTypeList);
   router.post('/putFruitInfo', controller.support.fruitType.putFruitInfo);
+  router.post('/register', controller.support.register.registerCon);
+  router.post('/login', controller.support.register.loginCon);
 
 
   //TODO 公用

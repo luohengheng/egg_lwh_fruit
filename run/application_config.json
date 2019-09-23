@@ -185,7 +185,7 @@
       "app": true,
       "agent": false,
       "client": {
-        "host": "192.168.9.238",
+        "host": "localhost",
         "port": "3306",
         "user": "root",
         "password": "<String len: 6>",
@@ -211,6 +211,7 @@
       },
       "dependencies": {
         "await-stream-ready": "^1.0.1",
+        "axios": "^0.19.0",
         "bcryptjs": "^2.4.3",
         "egg": "^2.15.1",
         "egg-mysql": "^3.0.0",
@@ -218,6 +219,7 @@
         "egg-validate": "^2.0.2",
         "jsonwebtoken": "^8.5.1",
         "md5": "^2.2.1",
+        "qs": "^6.9.0",
         "stream-wormhole": "^1.1.0"
       },
       "devDependencies": {
@@ -364,18 +366,23 @@
       "/getRecommedList",
       "/register",
       "/login",
-      "/getFruitDetail"
+      "/getFruitDetail",
+      "/wxlogin"
     ],
     "authLevel": {
       "user": 8,
       "admin": 15,
       "sup": 18
     },
+    "wxConfig": {
+      "appSecret": "<String len: 32>",
+      "appId": "wxcb391c5b020a69ae"
+    },
     "secret": {
       "secretKey": "<String len: 3>",
       "expiresIn": "12h"
     },
-    "addr": "192.168.9.238",
+    "addr": "localhost",
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware",

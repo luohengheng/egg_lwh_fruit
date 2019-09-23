@@ -24,7 +24,7 @@ module.exports = appInfo => {
   // 白名单接口
   config.authWhiteList = [
       '/getHomeBanner', '/getHomeInfo', '/getHomeShuffle', '/getRecommedList', '/register',
-      '/login', '/getFruitDetail'
+      '/login', '/getFruitDetail', '/wxlogin'
   ];
 
   // 目前定义三种用户级别
@@ -34,6 +34,12 @@ module.exports = appInfo => {
       sup: 18
   }
 
+  //todo wx登录验证(appSecret, appId)参数
+  config.wxConfig = {
+      appSecret: 'e91b53c889558106906a292c56f5e722',
+      appId: 'wxcb391c5b020a69ae'
+  }
+
   // 设置token生成的key 和token生效时间
   config.secret = {
       secretKey: 'lwh',
@@ -41,7 +47,7 @@ module.exports = appInfo => {
   }
 
   // 配置本地ip方便调试
-  config.addr = '192.168.9.238'
+  config.addr = 'localhost'
 
   // add your user config here
   const userConfig = {
@@ -66,7 +72,7 @@ module.exports = appInfo => {
     // 单数据库信息配置
     client: {
       // host
-      host: '192.168.9.238',
+      host: 'localhost',
       // 端口号
       port: '3306',
       // 用户名

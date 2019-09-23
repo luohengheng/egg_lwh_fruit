@@ -16,7 +16,7 @@ class RegisterController extends Controller {
             throw new ParamsError(e.errors)
         }
 
-        const res = await service.wx.register.registerSer(params)
+        const res = await service.support.register.registerSer(params)
         ctx.body = res
     }
 
@@ -34,7 +34,7 @@ class RegisterController extends Controller {
             throw new ParamsError(e.errors)
         }
 
-        const res = await service.wx.register.loginSer(params)
+        const res = await service.support.register.loginSer(params)
         ctx.body = res
     }
 }

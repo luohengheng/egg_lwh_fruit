@@ -54,6 +54,7 @@ class RegisterService extends BaseService {
             throw new ServieceError(e.message)
         }
     }
+
 }
 
 module.exports = RegisterService

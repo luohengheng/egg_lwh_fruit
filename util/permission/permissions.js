@@ -7,6 +7,7 @@ const permission = {
     '/getHomeBanner': 8,
     '/register': 8,
     '/login': 8,
+    '/wxlogin': 8,
 
     '/addFruitType': 15,
     '/changeFruitType': 15,
