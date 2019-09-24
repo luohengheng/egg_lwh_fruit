@@ -15,13 +15,13 @@ module.exports = (options, app) => {
                 }
             }else if (e.status && e.status === '400') {
                 ctx.body = {
-                    error: 'E19999',
+                    error: e.code,
                     msg: {
                         url: ctx.url,
                         method: ctx.method,
                         data: e.msg
                     },
-                    status: 404
+                    status: e.status
                 }
             }else {
                 ctx.body = {

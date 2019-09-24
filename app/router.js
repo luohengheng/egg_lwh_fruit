@@ -11,6 +11,7 @@ module.exports = app => {
   router.post('/getRecommedList', controller.wx.recommed.getRecommedList);
   router.post('/getFruitDetail', controller.wx.recommed.getFruitDetail);
   router.post('/wxlogin', controller.wx.login.wxLogin);
+  router.post('/genOrder', controller.wx.order.wxGenOrder);
 
   //TODO 业务支撑
   router.post('/addFruitType', controller.support.fruitType.addFruitType);

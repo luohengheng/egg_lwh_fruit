@@ -77,6 +77,18 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/genOrder",
+    "regexp": "/^\\/genOrder(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/addFruitType",
     "regexp": "/^\\/addFruitType(?:\\/(?=$))?$/",
     "stack": [

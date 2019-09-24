@@ -25,15 +25,6 @@ class HomeService extends BaseService {
         }catch (e) {
             throw  new ServieceError(e.message)
         }
-
-        //todo 开启事务
-        // 假如 我们拿到用户 id 从数据库获取用户详细信息
-        // const result = await app.mysql.beginTransactionScope(async conn => {
-            // await conn.query('UPDATE lwh_fruit SET price=?  WHERE id = ?;', [60, 1])
-            // await conn.query('UPDATE lwh_fruit SET price=?  WHERE id = ?;', [40, 2])
-            // return res;
-        // }, ctx);
-        // return result
     }
 
     async getHomeInfoSer() {

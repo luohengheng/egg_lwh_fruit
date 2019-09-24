@@ -200,6 +200,7 @@
       "egg-validate": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "jsonwebtoken": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "md5": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "node-uuid": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "qs": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "stream-wormhole": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js"
     },

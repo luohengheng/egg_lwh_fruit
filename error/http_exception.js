@@ -1,5 +1,5 @@
 class ServieceError extends Error{
-    constructor(msg='服务器内部错误',code='E99999',status='500') {
+    constructor(msg='服务器内部错误',code='E19999',status='500') {
         super()
         this.msg = msg
         this.code = code

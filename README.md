@@ -4,6 +4,13 @@
 项目主要还是为了练习当前叙述的这些技术，有出现bug希望多多指出
 这个项目是一个开发水果商城的一个系统
 
+## 项目参数配置
+1. confing/config.default.js配置
+    1. config.wxConfig中appSecret和appId分别需要你在微信小程序里面获取
+    2. config.secret中secretKey是生成token的key，expiresIn是token存活时间
+    3. config.addr是方便本地调试配置的服务器地址
+    4. const mysql数据库配置
+
 ## 目前开发的功能
 1. 定义所有接口参数校验，通过app的load加载整个校验文件夹加载到app中
 2. 定义自己业务类型报错，通过定义各种类型httpError继承error,填写错误类型和错误信息，通过app的load加载整个业务类型文件夹，存放在app中
@@ -28,6 +35,8 @@
 3. 用户
     1. 注册
     2. 登录(wx: openId登录 后台账号：用户名&密码登录)
+4. 购物车
+    1. 购物车提交生成订单，记录商品信息快照
 4. 后台
     1. 添加水果种类
     2. 添加水果种类列表

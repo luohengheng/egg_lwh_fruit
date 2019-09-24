@@ -19,7 +19,7 @@ class AppBootHook {
         // 可以用来加载应用自定义的文件，启动自定义的服务
 
         // 加载所有的校验规则
-        const valDirectory = path.join(this.app.config.baseDir, 'app/validate');
+        const valDirectory = path.join(this.app.config.baseDir, 'app/validates');
         this.app.loader.loadToApp(valDirectory, 'validate');
         // 加载所有异常类型
         const errDirectory = path.join(this.app.config.baseDir, 'error')

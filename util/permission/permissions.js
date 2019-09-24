@@ -8,6 +8,7 @@ const permission = {
     '/register': 8,
     '/login': 8,
     '/wxlogin': 8,
+    '/genOrder': 8,
 
     '/addFruitType': 15,
     '/changeFruitType': 15,

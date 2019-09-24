@@ -11,4 +11,12 @@ module.exports = app => {
             throw new ParamsError(`${value} params validator error`)
         }
     });
+
+    // 校验数组是否为空
+    validator.addRule('checkArr', (rule, value, arr)=>{
+
+        if (Object.prototype.toString.call(value) !== '[object Array]' || value.length === 0) {
+            throw new ParamsError(`${value} params validator error`)
+        }
+    });
 }
