@@ -8,24 +8,25 @@ class HomeService extends BaseService {
         try {
             let res = await app.mysql.query(
                 `SELECT
-                lf.id,
-                lf.NAME,
-                lf.image_url,
-                lf.price,
-                lf.cur_price,
-                lf.sold_nums,
-                lf.star_rate,
-                lf.introduce,
-                lft.NAME AS type_name 
-            FROM
-                lwh_fruit AS lf,
-                lwh_fruit_type AS lft 
-            WHERE
-                lf.fruit_type = lft.type_id;`)
+                    lf.fid,
+                    lf.name,
+                    lfu.md5_name,
+                    lf.price,
+                    lf.cur_price,
+                    lf.sold_nums,
+                    lf.star_rate,
+                    lf.introduce,
+                    lft.NAME AS type_name 
+                FROM
+                    lwh_fruit AS lf,
+                    lwh_fruit_type AS lft,
+                    lwh_file_upload AS lfu 
+                WHERE
+                    lf.fruit_type = lft.type_id AND lf.image_url = lfu.md5_code;`)
             res = res.map(i => {
                 return {
                     ...i,
-                    image_url: `http://${app.config.addr}:7001/public/img/${i.image_url}`
+                    image_url: `http://${app.config.addr}:7001/public/uploads/${i.md5_name}`
                 }
             });
 
@@ -44,23 +45,24 @@ class HomeService extends BaseService {
         try {
             let res = await app.mysql.query(
                 `SELECT
-                id,
-                name,
-                image_url,
-                price,
-                cur_price,
-                sold_nums,
-                star_rate,
-                introduce,
-                content
-            FROM
-                lwh_fruit
-            WHERE
-                id=?`, [id])
+                    lf.fid,
+                    lf.name,
+                    lfu.md5_name,
+                    lf.price,
+                    lf.cur_price,
+                    lf.sold_nums,
+                    lf.star_rate,
+                    lf.introduce,
+                    lf.content
+                FROM
+                    lwh_fruit AS lf,
+                    lwh_file_upload AS lfu
+                WHERE
+                    lf.image_url = lfu.md5_code AND fid = ?`, [id])
             res = res.map(i => {
                 return {
                     ...i,
-                    image_url: `http://${app.config.addr}:7001/public/img/${i.image_url}`
+                    image_url: `http://${app.config.addr}:7001/public/uploads/${i.md5_name}`
                 }
             });
 

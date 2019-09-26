@@ -2,6 +2,7 @@ const BaseService = require('../base_serviece')
 const handleToken = require('../../../util/handle_token')
 const axios = require('axios')
 const qs = require('qs')
+const uuid = require('node-uuid')
 
 class LoginService extends BaseService {
 
@@ -10,6 +11,7 @@ class LoginService extends BaseService {
         const {ServieceError} = app.errors.httpException
         const {code=''} = params
         const conn = await app.mysql.beginTransaction()
+        const uid = uuid.v1()
 
         //todo 在wx获取的code， 放在wx api中
         //todo  GET https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code
@@ -37,15 +39,15 @@ class LoginService extends BaseService {
             if (selRes.length === 0) {
                 //todo 如果查询不到openId 直接将openId插入
                 await conn.query(
-                    `INSERT INTO lwh_register(username, password, type, create_date, open_id) VALUES(?, ?, ?, ?, ?);`,
-                    ['', '', 'user', new Date(), openId])
+                    `INSERT INTO lwh_register(uid, username, password, type, create_date, open_id) VALUES(?, ?, ?, ?, ?, ?);`,
+                    [uid, '', '', 'user', new Date(), openId])
                 selRes = await conn.query(
                     `SELECT * FROM lwh_register WHERE open_id=?;`, openId)
                 conn.commit()
             }
 
             const userLevel =  app.config.authLevel[selRes[0].type]
-            const token = handleToken.generateToken(app, selRes[0].id, userLevel)
+            const token = handleToken.generateToken(app, selRes[0].uid, userLevel)
             return this.respPackage(200, {token})
         }catch (e) {
             conn.rollback()

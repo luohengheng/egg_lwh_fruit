@@ -5,7 +5,7 @@ module.exports = (options, app) => {
         }catch (e) {
             if (e.status && e.status === '500') {
                 ctx.body = {
-                    error: e.code,
+                    code: e.code,
                     msg: {
                         url: ctx.url,
                         method: ctx.method,
@@ -15,7 +15,7 @@ module.exports = (options, app) => {
                 }
             }else if (e.status && e.status === '400') {
                 ctx.body = {
-                    error: e.code,
+                    code: e.code,
                     msg: {
                         url: ctx.url,
                         method: ctx.method,
@@ -25,7 +25,7 @@ module.exports = (options, app) => {
                 }
             }else {
                 ctx.body = {
-                    error: 'E19999',
+                    code: 'E19999',
                     msg: {
                         url: ctx.url,
                         method: ctx.method,

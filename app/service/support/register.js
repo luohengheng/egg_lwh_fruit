@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs')
 const BaseService = require('../base_serviece')
 const handleToken = require('../../../util/handle_token')
+const uuid = require('node-uuid')
 
 class RegisterService extends BaseService {
 
@@ -10,6 +11,7 @@ class RegisterService extends BaseService {
         const {username='', password=''} = params
         const salt = bcrypt.genSaltSync(10)
         const saltPwd = bcrypt.hashSync(password, salt)
+        const uid = uuid.v1()
 
         try {
             const selRes = await app.mysql.query(
@@ -21,8 +23,8 @@ class RegisterService extends BaseService {
 
             //todo type 'user' 普通注册，'admin' 管理员, 'sup' 超级管理员, 'wx' 微信小程序,
             await app.mysql.query(
-                `INSERT INTO lwh_register(username, password, type, create_date, open_id) VALUES(?, ?, ?, ?, ?);`,
-                [username, saltPwd, '01', new Date(), ''])
+                `INSERT INTO lwh_register(uid, username, password, type, create_date, open_id) VALUES(?, ?, ?, ?, ?, ?);`,
+                [uid, username, saltPwd, 'user', new Date(), ''])
             return this.respPackage(200, '', '添加成功')
         }catch (e) {
             throw new ServieceError(e.message)
@@ -48,7 +50,7 @@ class RegisterService extends BaseService {
             }
 
             const userLevel =  app.config.authLevel[selRes[0].type]
-            const token = handleToken.generateToken(app, selRes[0].id, userLevel)
+            const token = handleToken.generateToken(app, selRes[0].uid, userLevel)
             return this.respPackage(200, {token})
         }catch (e) {
             throw new ServieceError(e.message)

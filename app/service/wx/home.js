@@ -11,13 +11,29 @@ class HomeService extends BaseService {
         const startIndex = pageNum * (pageSize - 1)
         const endIndex = pageNum
 
+        // SELECT lf.fid, lf.name, lfu.md5_name, lf.price, lf.cur_price, lf.sold_nums, lf.star_rate, lf.introduce  FROM lwh_fruit AS lf, lwh_file_upload AS lfu WHERE lf.image_url = lfu.md5_code;
         try {
-            let res = await app.mysql.query('select * from lwh_fruit limit ?,?',
+            let res = await app.mysql.query(`
+                SELECT
+                    lf.fid,
+                    lf.name,
+                    lfu.md5_name,
+                    lf.price,
+                    lf.cur_price,
+                    lf.sold_nums,
+                    lf.star_rate,
+                    lf.introduce 
+                FROM
+                    lwh_fruit AS lf,
+                    lwh_file_upload AS lfu 
+                WHERE
+                    lf.image_url = lfu.md5_code
+                limit ?,?;`,
                 [startIndex, endIndex])
             res = res.map(i => {
                 return {
                     ...i,
-                    image_url: `http://${app.config.addr}:7001/public/img/${i.image_url}`
+                    image_url: `http://${app.config.addr}:7001/public/uploads/${i.md5_name}`
                 }
             });
 
