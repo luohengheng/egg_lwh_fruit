@@ -30,12 +30,6 @@ class HomeService extends BaseService {
                     lf.image_url = lfu.md5_code
                 limit ?,?;`,
                 [startIndex, endIndex])
-            res = res.map(i => {
-                return {
-                    ...i,
-                    image_url: `http://${app.config.addr}:7001/public/uploads/${i.md5_name}`
-                }
-            });
 
             return this.respPackage(200, res)
         }catch (e) {

@@ -28,7 +28,7 @@ class RegisterController extends Controller {
         try {
             await ctx.validate({
                 username: 'string',
-                password: /^1\d+$/
+                password: 'string'
             })
         }catch (e) {
             throw new ParamsError(e.errors)

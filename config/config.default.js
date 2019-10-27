@@ -36,8 +36,8 @@ module.exports = appInfo => {
 
   //todo wx登录验证(appSecret, appId)参数
   config.wxConfig = {
-      appSecret: '',
-      appId: ''
+      appSecret: 'e91b53c889558106906a292c56f5e722',
+      appId: 'wxcb391c5b020a69ae'
   }
 
   // 设置token生成的key 和token生效时间

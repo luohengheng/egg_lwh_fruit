@@ -23,12 +23,6 @@ class HomeService extends BaseService {
                     lwh_file_upload AS lfu 
                 WHERE
                     lf.fruit_type = lft.type_id AND lf.image_url = lfu.md5_code;`)
-            res = res.map(i => {
-                return {
-                    ...i,
-                    image_url: `http://${app.config.addr}:7001/public/uploads/${i.md5_name}`
-                }
-            });
 
             return this.respPackage(200, res)
         }catch (e) {
@@ -59,12 +53,6 @@ class HomeService extends BaseService {
                     lwh_file_upload AS lfu
                 WHERE
                     lf.image_url = lfu.md5_code AND fid = ?`, [id])
-            res = res.map(i => {
-                return {
-                    ...i,
-                    image_url: `http://${app.config.addr}:7001/public/uploads/${i.md5_name}`
-                }
-            });
 
             return this.respPackage(200, res)
         }catch (e) {
