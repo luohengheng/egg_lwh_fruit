@@ -13,6 +13,15 @@ class BaseService extends Service{
                 },
                 status: 200
             }
+        case 201:
+            return {
+                code: 'E19999',
+                msg,
+                data: {
+                    data
+                },
+                status: 200
+            }
         default:
             break
         }

@@ -41,12 +41,12 @@ class RegisterService extends BaseService {
                 `SELECT * FROM lwh_register WHERE username=?;`, username)
 
             if (selRes.length === 0) {
-                return this.respPackage(200, '', '账号不存在')
+                return this.respPackage(201, '', '账号不存在')
             }
 
             const comparePwd = bcrypt.compareSync(password, selRes[0].password)
             if (!comparePwd) {
-                return this.respPackage(200, '', '密码错误')
+                return this.respPackage(201, '', '密码错误')
             }
 
             const userLevel =  app.config.authLevel[selRes[0].type]
