@@ -68,6 +68,10 @@
     "expiresIn": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
   },
   "addr": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+  "cors": {
+    "origin": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
+    "allowMethods": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js"
+  },
   "mysql": {
     "client": {
       "host": "/Users/lwh/Desktop/egg_lwh_fruit/config/config.default.js",
@@ -195,6 +199,7 @@
       "axios": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "bcryptjs": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-mysql": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/config.default.js",

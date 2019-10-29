@@ -163,6 +163,10 @@
       }
     },
     "validate": {},
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS"
+    },
     "env": "local",
     "name": "example",
     "keys": "<String len: 26>",
@@ -184,6 +188,7 @@
         "axios": "^0.19.0",
         "bcryptjs": "^2.4.3",
         "egg": "^2.15.1",
+        "egg-cors": "^2.2.2",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0",
         "egg-validate": "^2.0.2",
@@ -521,6 +526,17 @@
       "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
       "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-validate",
       "version": "2.0.2"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
+      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-cors",
+      "version": "2.2.2"
     }
   }
 }
