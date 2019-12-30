@@ -85,29 +85,29 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-onerror/lib/onerror_page.mustache",
+      "templatePath": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-onerror/lib/onerror_page.mustache",
       "all": "<Function all>"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-session/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-jsonp/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-onerror/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-watcher/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-schedule/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-development/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-mysql/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-validate/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-cors/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/locales",
-        "/Users/lwh/Desktop/egg_lwh_fruit/config/locales"
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-session/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-security/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-jsonp/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-onerror/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-i18n/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-watcher/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-schedule/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-multipart/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-development/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-logrotator/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-static/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-view/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-mysql/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-validate/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-cors/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/locales",
+        "/Users/lwh/project_type/my_project/egg_lwh_fruit/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -118,8 +118,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -165,14 +165,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/lwh/Desktop/egg_lwh_fruit/app/public",
+      "dir": "/Users/lwh/project_type/my_project/egg_lwh_fruit/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/lwh/Desktop/egg_lwh_fruit/app/view",
+      "root": "/Users/lwh/project_type/my_project/egg_lwh_fruit/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -261,9 +261,9 @@
       "author": "",
       "license": "MIT"
     },
-    "baseDir": "/Users/lwh/Desktop/egg_lwh_fruit",
+    "baseDir": "/Users/lwh/project_type/my_project/egg_lwh_fruit",
     "HOME": "/Users/lwh",
-    "rundir": "/Users/lwh/Desktop/egg_lwh_fruit/run",
+    "rundir": "/Users/lwh/project_type/my_project/egg_lwh_fruit/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -294,7 +294,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/lwh/Desktop/egg_lwh_fruit/logs/example",
+      "dir": "/Users/lwh/project_type/my_project/egg_lwh_fruit/logs/example",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -415,8 +415,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-session",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -428,8 +428,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-security",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-security",
       "version": "2.5.0"
     },
     "jsonp": {
@@ -441,8 +441,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-jsonp",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -454,8 +454,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-onerror",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -465,8 +465,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-i18n",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -476,8 +476,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-watcher",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -487,8 +487,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-schedule",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -500,8 +500,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-multipart",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-multipart",
       "version": "2.8.0"
     },
     "development": {
@@ -515,8 +515,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-development",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -528,8 +528,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-logrotator",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -539,8 +539,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-static",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -550,8 +550,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-view",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-view",
       "version": "2.1.2"
     },
     "mysql": {
@@ -561,8 +561,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-mysql",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-mysql",
       "version": "3.0.0"
     },
     "validate": {
@@ -572,8 +572,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-validate",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-validate",
       "version": "2.0.2"
     },
     "cors": {
@@ -583,8 +583,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lwh/Desktop/egg_lwh_fruit/config/plugin.js",
-      "path": "/Users/lwh/Desktop/egg_lwh_fruit/node_modules/egg-cors",
+      "from": "/Users/lwh/project_type/my_project/egg_lwh_fruit/config/plugin.js",
+      "path": "/Users/lwh/project_type/my_project/egg_lwh_fruit/node_modules/egg-cors",
       "version": "2.2.2"
     }
   }

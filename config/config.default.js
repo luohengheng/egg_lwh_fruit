@@ -77,8 +77,10 @@ module.exports = appInfo => {
             port: '3306',
             // 用户名
             user: 'root',
-            // 密码
-            password: '123456',
+            // 密码本地
+            // password: '123456',
+            // ali
+            password: '123.com',
             // 数据库名
             database: 'my_fruit',
         },
